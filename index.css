@@ -1,0 +1,325 @@
+header {    
+    background-image: url('image/burger.png');
+    background-size: cover;    
+    height: 200px;
+    margin-bottom: 65px;
+}
+
+body {    
+    margin: 0 auto;
+    width: 600px;
+    display: block;
+    font-family: 'Smythe', cursive;
+} 
+
+h1 {
+    margin: 0;
+    color: #FFF;    
+    padding-top: 60px;
+    padding-left: 46px;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 61.538% */
+}
+
+h2 {
+    color: #000;    
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 60% */
+    text-align: center;
+}
+
+h3 {
+    color: #FFF;    
+    padding-left: 46px;
+    font-size: 22.422px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.798px; /* 61.538% */
+}
+
+/*******************Food Section***********************/
+
+.menu {
+    margin: 0 46px 45px 46px;    
+    display: flex;
+    border-bottom: solid #D2D2D2 1px;
+    align-items: start;
+}
+
+.emoji-menu {
+    display: flex;
+    width: 70px;
+    height: 89px;  
+    
+    flex-shrink: 0;
+    color: #000;
+    
+    font-family: Inter;
+    font-size: 78.72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.4px; /* 125% */
+    letter-spacing: -1.574px;
+    margin: 0 50px 50px 0;
+}
+
+.description-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-menu {
+    color: #000;
+    font-family: Smythe;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 60% */
+    margin: 4px 0;
+}
+
+.ingredients-menu {
+    color: #8B8B8B;
+    font-family: Smythe;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin: 4px 0;
+}
+
+.price-menu {
+    color: #000;
+    font-family: Smythe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    margin: 4px 0;
+}
+
+.add-btn {
+    margin-left: auto;
+    width: 27px;
+    height: 28.5px;
+    flex-shrink: 0;
+    color: #3C3C3C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px; /* 75% */
+
+    border: #DEDEDE solid 1px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/***************Order Section*****************/
+
+#order-container{
+    margin: 0 46px;        
+}
+
+#orders {
+    border-bottom: solid 2px #393333;
+    margin-top: 65px;
+    margin-bottom: 16px; 
+    padding-bottom: 30px;   
+}
+
+.order {
+    display: flex;
+    justify-content: start;
+}
+
+.name-order {
+    margin: 0 10px 20px 0;
+    color: #000;    
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 60% */
+}
+
+.count-order {
+    color: #000;
+    margin: 0 15px 20px 0;    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.remove-order {    
+    cursor: pointer;
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+}
+
+.price-order {
+    margin-left: auto;
+    color: #000;    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+}
+
+.total {
+    color: #0E0E0E;    
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 85.714% */
+}
+
+.order-price {
+    display: flex;
+}
+
+#price {
+    margin-left: auto;
+    font-size: 20px;
+}
+
+
+#order-complete-btn {        
+    padding: 20px 150px;     
+    text-align: center;
+    border-radius: 3px;
+    background: #16DB99;
+
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    margin: 45px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+/***************Modal Section*****************/
+
+.payment-modal {
+    width: 524px;
+    height: 542.24px;
+    flex-shrink: 0;     
+    filter: drop-shadow(5.186544418334961px 5.186544418334961px 255.43731689453125px rgba(0, 0, 0, 0.50));
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto; 
+    display: flex;
+    flex-direction: column; 
+    
+    border-radius: 3.89px;
+    background: #FFF;
+}
+
+.modal-title {
+    color: #000;
+    margin: 30px 0;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.119px; /* 129.664% */
+}
+
+.modal-input {
+    border-radius: 3.89px;
+    border: 1.297px solid #757575;
+    padding-left: 27px;
+    margin: 14px 23px;
+
+    color: #757575;
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.119px; /* 155.596% */
+
+    width: 475.911px;
+    height: 71.304px;
+    flex-shrink: 0;
+}
+
+.modal-btn {
+    width: 475.911px;
+    height: 71.304px;
+    flex-shrink: 0;
+
+    border-radius: 3.89px;
+    background: #16DB99;
+    margin: 45px 23px 0 23px;
+    cursor: pointer;  
+    
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.119px; /* 155.596% */
+}
+
+.error {
+    width: 200px;
+    color: rgb(182, 42, 42);    
+    /*padding: 20px 10px;*/    
+    margin: -25px 0 0 50px;    
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center;
+    z-index: 200;
+    /*box-shadow: 0 1px 2px 0 rgba(37, 1, 1, 0.302),
+    0 2px 6px 2px rgba(37, 1, 1, 0.302);*/
+    /*border-radius: 5px;    */
+    background: #FFF;
+    font-family: Verdana;
+    font-size: 16px;    
+    font-weight: 500;
+    
+}
+
+.end-purchase {
+    margin: 0 46px;
+    width: 504px;
+    height: 120px;    
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #ECFDF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #065F46;
+    font-family: Smythe;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 52.5% */
+}
+
+.hidden {
+    display: none;
+}

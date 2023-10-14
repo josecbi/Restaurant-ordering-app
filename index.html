@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="title" id="title">
+            <h1>Puchi's Diner</h1>
+            <h3>The best burgers and pizzas in town</h3>
+        </header>
+        <section class="food-stock" id="food-stock">
+            <div class="food-container" id="food-container"></div>            
+        </section>
+        <section class="order-section" id="order-section">
+            <div class="order-container" id="order-container">
+                <h2>Your order</h2>
+                <div class="orders" id="orders"></div>
+                <div class="order-price" id="order-price">
+                    <div class="total-price total" id="total-price">Total price:</div>
+                    <div class="price total" id="price"></div>
+                </div>
+                <button class="order-complete-btn" id="order-complete-btn">Complete order</button>
+            </div>
+        </section>
+        <section class="modal">
+            <form id="form" autocomplete="off">
+                <div class="payment-modal hidden" id="payment-modal"> 
+                    <h2 class="modal-title">Enter card details</h2>               
+                    <input type="text" placeholder="Enter your name" class="modal-input" id="name-modal"></input>
+                    <span class="error hidden">Please fill in this field</span>
+                    <input type="text" placeholder="Enter card number" class="modal-input" id="card-number"></input>
+                    <span class="error hidden">Please fill in this field</span>
+                    <input type="text" placeholder="Enter CVV" class="modal-input" id="cvv"></input>
+                    <span class="error hidden">Please fill in this field</span>
+                    <input type="submit" class="modal-btn" id="modal-btn" value="Pay"></input>                                
+                </div>
+            </form>            
+        </section>
+        <section id="end-of-purchase">
+            <div class="end-purchase" id="end-purchase"></div>
+        </section>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
